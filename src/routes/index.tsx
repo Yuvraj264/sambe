@@ -65,14 +65,14 @@ function Home() {
     <>
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[520px] w-full overflow-hidden">
-        <video
-          src="https://drive.google.com/uc?export=download&id=1MNxaM3nbBhbpcbEfyquvpc7NERnmYueL"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        <div className="absolute inset-0 w-full h-full">
+          <iframe
+            src="https://www.youtube.com/embed/MtOdZiz0PW8?autoplay=1&mute=1&loop=1&playlist=MtOdZiz0PW8&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0&enablejsapi=1"
+            className="absolute top-1/2 left-1/2 w-[115vw] min-w-[177.77vh] h-[56.25vw] min-h-[100vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            allow="autoplay; encrypted-media"
+            title="Hero Background Video"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/80 to-primary/60" />
         <div className="relative h-full container-x flex items-center">
           <div className="max-w-2xl text-primary-foreground animate-fade-up">
